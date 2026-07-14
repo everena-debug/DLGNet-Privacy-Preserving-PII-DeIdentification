@@ -46,15 +46,34 @@ Only public dataset links and synthetic examples are provided.
 
 ## Reproducibility
 
-The notebook includes
+The notebook `DLGNet_Reproducibility.ipynb` contains the complete implementation of the proposed DLGNet framework, including:
 
-- preprocessing pipeline
-- random seed initialization
-- hyperparameter configuration
-- prompt template
-- evaluation pipeline
-- automatic generation of manuscript tables
+- Data preprocessing and BIO label consolidation
+- DeBERTa-v3 token-level PII detection
+- TinyLlama semantic verification
+- WGAN-GP-based surrogate generation
+- Type-aware entity replacement
+- Residual PII validation
+- Utility preservation evaluation
+- Random seed initialization and reproducibility settings
+- Hyperparameter configuration
+- Prompt template for semantic verification
+- Evaluation pipeline
+- Automatic generation of Tables 4, 10, 11, 12, and 13
+
+All manuscript tables are generated directly from the execution of the notebook rather than being manually entered.
+
+The repository does not contain raw PII data. Users should download the public Kaggle dataset separately and place it in the specified input directory before running the notebook.
+
+## Execution
+
+1. Download the public Kaggle dataset.
+2. Update the dataset path in the configuration cell if necessary.
+3. Execute all notebook cells sequentially from Cell 1 to the final cell.
+4. The notebook automatically trains the models, evaluates performance, and generates the manuscript tables.
 
 ## Citation
 
-If you use this repository, please cite the corresponding publication after publication.
+If you use this repository in your research, please cite the corresponding journal publication after publication.
+
+The bibliographic details will be updated after the article is published.
