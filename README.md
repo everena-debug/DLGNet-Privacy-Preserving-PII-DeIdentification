@@ -59,7 +59,7 @@ The notebook `DLGNet_Reproducibility.ipynb` contains the complete implementation
 - Hyperparameter configuration
 - Prompt template for semantic verification
 - Evaluation pipeline
-- Automatic generation of Tables 4, 10, 11, 12, and 13
+- Automatic generation of performance, ablation, comparative analysis, false-negative rate, and runtime evaluation tables
 
 All manuscript tables are generated directly from the execution of the notebook rather than being manually entered.
 
